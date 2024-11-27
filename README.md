@@ -1,7 +1,7 @@
 # 3D Audio-Visual Segmentation
 Artem Sokolov, Swapnil Bhosale, Xiatian Zhu  
 ### NeurIPS 2024 Workshop on Audio Imagination
-[![Project page](https://img.shields.io/badge/3D_Audio--Visual_Segmentation-%F0%9F%8C%90Website-purple?style=flat)](https://surrey-uplab.github.io/research/3d-audio-visual-segmentation/) [![arXiv](https://img.shields.io/badge/arXiv-2411.02236-b31b1b.svg)](https://arxiv.org/abs/2411.02236) [![Dataset](https://img.shields.io/badge/3DAVS--S34--O7_Dataset-8A2BE2.svg)](https://github.com/githubartema/3D-Audio-Visual-Segmentation/)
+[![Project page](https://img.shields.io/badge/3D_Audio--Visual_Segmentation-%F0%9F%8C%90Website-purple?style=flat)](https://surrey-uplab.github.io/research/3d-audio-visual-segmentation/) [![arXiv](https://img.shields.io/badge/arXiv-2411.02236-b31b1b.svg)](https://arxiv.org/abs/2411.02236) [![Dataset](https://img.shields.io/badge/3DAVS--S34--O7_Dataset-8A2BE2.svg)](https://github.com/Surrey-UPLab/3D-Audio-Visual-Segmentation)
 
 ![teaser](figures/2d_avs_vs_3d_avs.png)
 
