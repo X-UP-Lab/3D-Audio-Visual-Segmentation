@@ -17,14 +17,11 @@ Artem Sokolov, Swapnil Bhosale, Xiatian Zhu
 ## Citation
 If you find our project useful, please use the following BibTeX entry:
 ```bibtex
-@article{sokolov20243daudiovisualsegmentation,
-      title={3D Audio-Visual Segmentation}, 
-      author={Artem Sokolov and Swapnil Bhosale and Xiatian Zhu},
-      year={2024},
-      eprint={2411.02236},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.02236}, 
+@inproceedings{sokolov20243daudiovisualsegmentation,
+    title     = {3D Audio-Visual Segmentation},
+    author    = {Sokolov, Artem and Bhosale, Swapnil and Zhu, Xiatian},
+    booktitle = {Audio Imagination: NeurIPS 2024 Workshop AI-Driven Speech, Music, and Sound Generation},
+    year      = {2024}
 }
 
 ```
