@@ -6,12 +6,15 @@ The Echosegnet pipeline uses **train_cameras.json** and **test_cameras.json**, w
 To ensure strict reproducibility and prevent data leakage, **camera_splits.json** file is also provided for each scene. This file defines the same train/test partitions and can be used for convenience or by alternative (non–3D-GS-based) methods.
 
 For the Echosegnet method, only the training frames and their corresponding audio clips are used for:
-	•	generating 2D masks for OWOD-BIND,
-	•	training the 3D Gaussian Splatting (GS) scene,
-	•	constructing the Audio Intensity Map, and
-	•	lifting 2D masks into 3D space.
+
+ - generating 2D masks for OWOD-BIND,
+ - training the 3D Gaussian Splatting (GS) scene,
+ - constructing the Audio Intensity Map, and
+ - lifting 2D masks into 3D space.
 
 Test frames are used exclusively for evaluation in the run_lifting_aisrm.py script.
+
+***
 
 ### Dataset Structure
 
