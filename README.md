@@ -1,7 +1,7 @@
 # 3D Audio-Visual Segmentation
 Artem Sokolov, Swapnil Bhosale, Xiatian Zhu  
 ### NeurIPS 2024 Workshop on Audio Imagination
-[![Project page](https://img.shields.io/badge/3D_Audio--Visual_Segmentation-%F0%9F%8C%90Website-purple?style=flat)](https://x-up-lab.github.io/research/3d-audio-visual-segmentation/) [![arXiv](https://img.shields.io/badge/arXiv-2411.02236-b31b1b.svg)](https://arxiv.org/abs/2411.02236) [![Dataset](https://img.shields.io/badge/3DAVS--S34--O7_Dataset-8A2BE2.svg)](https://github.com/Surrey-UPLab/3D-Audio-Visual-Segmentation)
+[![Project page](https://img.shields.io/badge/3D_Audio--Visual_Segmentation-%F0%9F%8C%90Website-purple?style=flat)](https://x-up-lab.github.io/research/3d-audio-visual-segmentation/) [![arXiv](https://img.shields.io/badge/arXiv-2411.02236-b31b1b.svg)](https://arxiv.org/abs/2411.02236) [![Dataset](https://img.shields.io/badge/3DAVS--S34--O7_Dataset-8A2BE2.svg)](https://drive.google.com/file/d/1HG53HrcCnWCKBXF0lVVtEEkqebL-N9jT/view?usp=sharing)
 
 ![teaser](figures/2d_avs_vs_3d_avs.png)
 
@@ -12,7 +12,7 @@ Artem Sokolov, Swapnil Bhosale, Xiatian Zhu
 - Data & Code coming soon!
 
 ## 3DAVS-S34-O7 dataset
-The dataset can be downloaded from this [link]().
+The dataset can be downloaded from this [link](https://drive.google.com/file/d/1HG53HrcCnWCKBXF0lVVtEEkqebL-N9jT/view?usp=sharing).
 Please refer to the [description](./docs/dataset.md) for details on the included data and usage.
 
 The dataset is an Adapted Material derived from and compiled using several external resources. You must comply with the non-commercial terms of the original licenses:
