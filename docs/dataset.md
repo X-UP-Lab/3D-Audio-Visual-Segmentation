@@ -1,6 +1,7 @@
 # 3DAVS-S34-O7 dataset
 
 Please see [paper](https://arxiv.org/pdf/2411.02236) for a description of the 3DAVS-S34-O7 dataset, in particular Appendix A.3.
+The dataset can be downloaded from this [link](https://drive.google.com/file/d/1HG53HrcCnWCKBXF0lVVtEEkqebL-N9jT/view?usp=sharing).
 
 The Echosegnet pipeline uses **train_cameras.json** and **test_cameras.json**, which are automatically generated for each scene by running audio_informed_gaussian_splatting/train.py with the **--eval** flag. In this process, every 8th frame is assigned to the test set. These splits are deterministic when the 3D Gaussian Splatting (3D-GS) training is performed using the provided COLMAP data.
 To ensure strict reproducibility and prevent data leakage, **camera_splits.json** file is also provided for each scene. This file defines the same train/test partitions and can be used for convenience or by alternative (non–3D-GS-based) methods.
