@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avs_3d"
+version = "0.1.0"
+description = "3D Audio-Visual Segmentation"
+authors = [
+    { name="Artem Sokolov", email="artemiojosesokov@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy==1.26.4",
+    "plyfile==0.8.1",
+    "scipy==1.15.3",
+    "setuptools<81",
+    "tqdm==4.67.1",
+    "opencv-python==4.8.*",
+    "matplotlib==3.10.6",
+    "transformers==4.32.1",
+    "scikit-learn==1.7.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

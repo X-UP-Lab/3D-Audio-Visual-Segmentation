@@ -1,0 +1,13 @@
+device: "cuda:0"
+
+caod:
+  model_name: "mdef_detr_minus_language"
+  checkpoint: "./src/avs_3d/echosegnet/owod_bind/.checkpoints/MDef_DETR_minus_language_r101_epoch10.pth"
+  confidence_threshold: 0.15
+  max_box_ratio: 0.98
+
+sam:
+  model_name: "vit_h"
+  checkpoint: "./src/avs_3d/echosegnet/owod_bind/.checkpoints/sam_vit_h_4b8939.pth"
+
+vision_audio_threshold: 0.2 # Set according to the value used in the paper
