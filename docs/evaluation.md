@@ -12,6 +12,17 @@ Download the dataset from [link](https://drive.google.com/drive/folders/17yhfD9k
 bash ./src/avs_3d/scripts/train_gaussian_splatting_dataset.sh ./dataset/3DAVS-S34-O7
 ```
 
+The above command can be run on multiple GPUs (if available) to speed up the process.
+Modify the following line inside ./src/avs_3d/scripts/train_gaussian_splatting_dataset.sh:
+
+```bash
+for gpu in 0; do
+```
+to
+```bash
+for gpu in 0 1; do
+```
+
 The trained Audio-Informed 3D Gaussian Splatting models will be saved to `dataset/3DAVS-S34-O7/<part>/<room>/<idx>/3dgs_scene`.
 
 ***
@@ -35,6 +46,17 @@ The script below will run for each scene, both with and without AISRM. It also a
 
 ```bash
 bash ./src/avs_3d/scripts/run_lifting_aisrm_dataset.sh ./dataset/3DAVS-S34-O7
+```
+
+The above command can be run on multiple GPUs (if available) to speed up the process.
+Modify the following line inside ./src/avs_3d/scripts/run_lifting_aisrm_dataset.sh:
+
+```bash
+for gpu in 0; do
+```
+to
+```bash
+for gpu in 0 1; do
 ```
 
 Predicted 3D segmented point clouds will be saved to `dataset/3DAVS-S34-O7/<part>/<room>/<idx>/3dgs_scene` and rendered 2D segmentation masks will be saved to `dataset/3DAVS-S34-O7/<part>/<room>/<idx>/echosegnet_output`.
