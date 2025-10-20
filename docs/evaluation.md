@@ -1,6 +1,6 @@
 # EchosegNet Evaluation on 3DAVS-S34-O7
 
-Download the dataset from [link](https://drive.google.com/file/d/1HG53HrcCnWCKBXF0lVVtEEkqebL-N9jT/view?usp=sharing) and place it in the `dataset` directory, so that the full path to the dataset is `dataset/3DAVS-S34-O7`.
+Download the dataset from [link](https://drive.google.com/drive/folders/17yhfD9kBJhoutOYZhrze4AkpSf1KwpfL?usp=sharing) and place it in the `dataset` directory, so that the full path to the dataset is `dataset/3DAVS-S34-O7`.
 
 ***
 
