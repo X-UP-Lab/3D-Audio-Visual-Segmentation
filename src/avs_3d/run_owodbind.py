@@ -1,3 +1,12 @@
+# Implementation of OWOD-BIND
+# Swapnil Bhosale, Haosen Yang, Diptesh Kanojia, and Xiatian Zhu.
+# "Leveraging Foundation Models for Unsupervised Audio-Visual Segmentation."
+# arXiv preprint arXiv:2309.06728, 2023.
+# URL: https://api.semanticscholar.org/CorpusID:261705977
+#
+# Some parts of the implementation are inspired by:
+# https://github.com/IDEA-Research/Grounded-Segment-Anything
+
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 import argparse
