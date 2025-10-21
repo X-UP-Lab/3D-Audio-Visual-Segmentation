@@ -135,7 +135,11 @@ if __name__ == "__main__":
     for scene_path in tqdm(scenes, desc="Processing Scenes"):
         logging.info(f"Processing scene: {scene_path}")
         
-        with open(os.path.join(scene_path, "train_cameras.json"), "r") as f:
+        if not os.path.exists(os.path.join(scene_path, "3dgs_scene")):
+            logging.warning(f"Missing directory: {scene_dir}, skipping")
+            continue
+        
+        with open(os.path.join(scene_path, "3dgs_scene", "train_cameras.json"), "r") as f:
             train_cameras = sorted([x["img_name"] for x in json.load(f)])
 
         owod_bind_path = os.path.join(scene_path, "owod_bind_train_frames")
