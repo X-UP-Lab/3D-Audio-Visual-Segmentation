@@ -45,7 +45,7 @@ You should manually download this file from the following **folder link** and pl
 
 **Move to the checkpoint folder:**
 ```bash
-mv /path/to/downloaded/MDef_DETR_minus_language_r101_epoch10.pth $PROJECT_ROOT/src/avs_3d/echosegnet/owod_bind/submodules/.checkpoints/
+mv /path/to/downloaded/MDef_DETR_minus_language_r101_epoch10.pth $PROJECT_ROOT/src/avs_3d/echosegnet/owod_bind/.checkpoints/
 ```
 
 **Build and Export Path:**
@@ -64,7 +64,7 @@ cd $PROJECT_ROOT
 ### 2.2 Install ImageBind and Segment-Anything
 
 ```bash
-CHECKPOINT_DIR=$PROJECT_ROOT/src/avs_3d/echosegnet/owod_bind/submodules/.checkpoints
+CHECKPOINT_DIR=$PROJECT_ROOT/src/avs_3d/echosegnet/owod_bind/.checkpoints
 
 # Install
 pip install git+https://github.com/facebookresearch/ImageBind.git
