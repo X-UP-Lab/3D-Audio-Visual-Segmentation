@@ -3,6 +3,7 @@
 ## 1. Environment Setup
 
 ```bash
+cd 3D-Audio-Visual-Segmentation
 PROJECT_ROOT=$(pwd)
 conda create -n avs3d python=3.10
 conda activate avs3d
