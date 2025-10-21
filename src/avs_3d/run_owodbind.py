@@ -41,17 +41,17 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(message)s",
 )
 
-def run_caod_inference(model, image_paths):
+
+def run_caod_inference(model, image_paths, root_dir):
     """
     Run CAOD model inference
     """
     detections_map = {}
     for image_path in image_paths:
-        image_key = os.path.splitext(os.path.basename(image_path))[0]
+        rel_key = os.path.relpath(image_path, start=root_dir)
         detections = model.infer_image(image_path, caption=None)
-        detections_map[image_key] = detections
+        detections_map[rel_key] = detections
     return detections_map
-
 
 def retriev_vision_and_audio(elements, audio_list, device, bind_model):
     """Retrieve joint vision-audio embeddings."""
@@ -108,7 +108,7 @@ if __name__ == "__main__":
             for f in os.listdir(images_dir)
             if f.lower().endswith(('.png', '.jpg', '.jpeg'))
         ]
-        scene_detections = run_caod_inference(caod_model, image_paths)
+        scene_detections = run_caod_inference(caod_model, image_paths, root_dir)
         all_caod_detections.update(scene_detections)
 
     del caod_model # to clear VRAM
@@ -148,7 +148,11 @@ if __name__ == "__main__":
         for img_name in tqdm(train_cameras, desc=f"Frames in {os.path.basename(scene_path)}", leave=False):
             
             # 1. RETRIEVE CAOD DATA
-            caod_bb = all_caod_detections.get(img_name)
+            img_rel_path = os.path.relpath(
+                os.path.join(scene_path, "input", f"{img_name}.png"), 
+                start=root_dir
+            )
+            caod_bb = all_caod_detections.get(img_rel_path)
             if not caod_bb:
                 logging.warning(f"No CAOD detection for {img_name}, skipping.")
                 continue
