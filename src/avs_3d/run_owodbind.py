@@ -136,7 +136,7 @@ if __name__ == "__main__":
         logging.info(f"Processing scene: {scene_path}")
         
         if not os.path.exists(os.path.join(scene_path, "3dgs_scene")):
-            logging.warning(f"Missing directory: {scene_dir}, skipping")
+            logging.warning(f"Missing directory '3dgs_scene' for {scene_path}, skipping")
             continue
         
         with open(os.path.join(scene_path, "3dgs_scene", "train_cameras.json"), "r") as f:
