@@ -84,6 +84,12 @@ def compute_ratios(conv_2d, points_xy, indices_mask, sam_mask, h, w):
     max_eigvec = max_eigvec / torch.norm(max_eigvec, dim=1).unsqueeze(-1)
     vertex1 = means + 0.5 * long_axis.unsqueeze(1) * max_eigvec
     vertex2 = means - 0.5 * long_axis.unsqueeze(1) * max_eigvec
+
+    vertex1[torch.isnan(vertex1)] = 0
+    vertex1[torch.isinf(vertex1)] = 0
+    vertex2[torch.isnan(vertex2)] = 0
+    vertex2[torch.isinf(vertex2)] = 0
+    
     vertex1 = torch.clip(vertex1, torch.tensor([0, 0]).to(points_xy.device), torch.tensor([w-1, h-1]).to(points_xy.device))
     vertex2 = torch.clip(vertex2, torch.tensor([0, 0]).to(points_xy.device), torch.tensor([w-1, h-1]).to(points_xy.device))
     # 得到每个gaussian顶点的label
