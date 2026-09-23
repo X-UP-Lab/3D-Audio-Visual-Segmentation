@@ -42,7 +42,7 @@ sed -i 's/from infer import Inference/from .infer import Inference/' $PROJECT_RO
 The required file is **`MDef_DETR_minus_language_r101_epoch10.pth`**.
 You should manually download this file from the following **folder link** and place it in the specified directory:
 
-[Weights link for MDef_DETR_minus_language_r101_epoch10.pth](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/muhammad_maaz_mbzuai_ac_ae/Erw0P4D7bDdKtl4BstL8XFsBv-k2W7Ya9rKOaZBIOrTEcQ?e=pL2VgF)
+[Weights link for MDef_DETR_minus_language_r101_epoch10.pth](https://drive.google.com/file/d/1j-_7NnAl2b1B0LYwjIp5qGK5s86n6eKy/view?usp=sharing)
 
 **Move to the checkpoint folder:**
 ```bash
